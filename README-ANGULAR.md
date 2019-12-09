@@ -21,7 +21,11 @@ O desenvolvedor deverá criar um formulário de reserva de ingressos para os fil
 
 ### Layout
 
-Utilize o link [https://app.avocode.com/projects/1293800/groups/4683024](https://app.avocode.com/projects/1293800/groups/4683024) para montar a estrutura da sua aplicação.
+Utilize o links a seguir para montar a estrutura da sua aplicação.
+<br><br>
+[Tela sem acompanhante](https://app.avocode.com/view/1a45b72eba2a46a28cf9c20a13a35d7a) 
+<br>
+[Tela com acompanhante](https://app.avocode.com/view/86dd682733d041afbc696cbb9bb0ec62) 
 
 ***Requisitos mínimos:***
 
