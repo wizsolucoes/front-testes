@@ -78,6 +78,8 @@ Seu projeto deve conter ao menos um componente a ser utilizado no formulário co
 ### Regras:
 
 + Todos os campos são obrigatórios
++ Somente um acompanhante é permitido e os campos somente aparecem quando o checkbox **Adicionar acompanhante** estiver marcado.
++ Caso o checkbox **Adicionar acompanhante** esteja marcado, os campos do acompanhante também serão obrigatórios.
 + O botão Enviar somente estará ativo quando todos os campos estiverem válidos.
 + Ao clicar no botão enviar um JSON deverá ser enviado a seguinte url: *http://localhost/reserva*, a chamada deverá ser um **post** e em seu cabeçalho deverá haver um campo **Authorization** com o seguinte hash: *#ASDFGW#ERWQERTRYT#%$%$@#$%==*.
 
