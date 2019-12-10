@@ -41,7 +41,8 @@ Utilize o links a seguir para montar a estrutura da sua aplicação.
 + Utilização de mixers, variables e placeholders (quando cabíveis).
 + README.md sugerir melhorias de usabilidade e acessibilidade caso as encontre.
 
-> Obs: o campo de cidade pode ser textual.
+> Obs: o campo de cidade pode ser textual.<br>
+> A área de valores não precisar ser interativa (caso queira, pode ser criativo e definir os valores), mas deve ser layoutada.
 
 ### Código:
 
