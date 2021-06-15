@@ -4,16 +4,17 @@ Este teste tem por objetivo medir o nível técnico nas seguintes áreas:
 
 + Organização do projeto
 + Utilização coesa das estruturas Html
-+ Clareza de código e organização das classes
-+ Nível de conhecimento em **Angular 5+**
-+ Conhecimento em testes (não obrigatório, mas será diferencial)
++ Uso de CSS/SCSS
++ Uso de Typescript
++ Clareza e organização de código
++ Nível de conhecimento em **Angular**
 + Consumo de WebApi's e tratamento de chamadas assíncronas
++ Conhecimento em testes (não obrigatório, mas será um diferencial)
 
 ## Tecnologias a serem utilizadas
 
-+ Angular 5 ou superior
++ A versão mais recente de Angular
 + Scss ou css
-+ Testes (opcional)
 
 ## Desafio
 
@@ -27,32 +28,13 @@ Utilize o links a seguir para montar a estrutura da sua aplicação.
 <br>
 [Tela com acompanhante](https://app.avocode.com/view/86dd682733d041afbc696cbb9bb0ec62) 
 
-***Requisitos mínimos:***
-
-+ Seguir o layout proposto, fazendo melhorias somente quando cabíveis.
-+ Utilização coesa da estrutura Html.
-+ Organização da estrutura CSS.
-
-***Diferenciais:***
-
-+ Máscaras nos campos que permitem esse uso.
-+ Implementar responsividade.
-+ Animações.
-+ Utilização de mixers, variables e placeholders (quando cabíveis).
-+ README.md sugerir melhorias de usabilidade e acessibilidade caso as encontre.
-
 > Obs:<br>
 > + O campo de cidade pode ser textual.<br>
-> + A área de valores não precisar ser interativa, mas deve ser implementada.
+> + A área de valores não precisar ser dinâmica, mas deve ser incluída na implementação do layout.
 
-### Código:
+### APIs obrigatórias:
 
-Via de regra o código estará sendo julgado por: organização, identação e clareza. Mas a arquitetura de pastas e a divisão de classes fica por conta do desenvolvedor.
-
-### Apis obrigatórias:
-
-
-***The Movie Database Api:***
+#### The Movie Database API
 
 Para preencher o campo de filmes será obrigatório o uso da api [https://www.themoviedb.org/](https://www.themoviedb.org/).
 
@@ -60,19 +42,34 @@ Para preencher o campo de filmes será obrigatório o uso da api [https://www.th
 + Você precisará se cadastrar para conseguir uma chave de acesso.
 + Somente será necessário exibir a página 1 dos resultados na lista.
 
-***Api correios:***
+##### Sobre a chave de acesso
+Na sua implementação a chave de acesso deve ficar em um arqvuivo chamado `moviedb-config.ts`, **mas este arquivo não deve ser versionado no git**. Para sua entrega crie um arquivo chamado `moviedb-config-sample.ts` que deve ser versionado com o mesmo formato mas **sem a chave de acesso real**.
+
+Exemplo:
+```ts
+// moviedb-config.ts NÂO DEVE ser versionado
+export const movieDbConfig = {
+  api_key: "ec5e799n384n48e8dnen48r8585rnff8",
+};
+```
+
+```ts
+// moviedb-config-sample.ts DEVE ser versionado
+export const movieDbConfig = {
+  api_key: "INSIRA-SUA-CHAVE-AQUI",
+};
+```
+
+O clonar seu repositório vamos renomear o arquivo de `moviedb-config-sample.ts` para `moviedb-config.ts` para rodar a aplciação.
+
+### API de consulta de CEP
 
 Após digitar o cep os demais campos deverão ser preenchidos com base no retorno de uma api de consulta de endereço por **cep**:
 
-+ Recomendamos esta: [https://correiosapi.apphb.com/](https://correiosapi.apphb.com/), mas o desenvolvedor poderá utilizar outra de sua preferência*.
++ Recomendamos a [ViaCEP](https://viacep.com.br/), mas o desenvolvedor poderá utilizar outra de sua preferência.
 
-**Lembre-se que ela deve funcionar abertamente, sem restrições de rede ou hospedagem*
+**Lembre-se que ela deve funcionar abertamente, sem restrições de rede ou hospedagem.**
 
-### Estrutura:
-
-A organização de pastas e de código fica a cargo do desenvolvedor. Contudo no nível raiz da app deverá haver um arquivo chamado **moviedb-config-sample.ts**. Nele deverá haver o exemplo para gerar o arquivo **moviedb-config.ts** que deverá ser o local onde as chaves necessárias a utilização desta api.
-
-> Não coloque o arquivo **moviedb-config.ts** dentro do mapeamento do git. Não é seguro colocar uma chave pessoal online.
 
 ### Componentização:
 
@@ -89,15 +86,20 @@ Seu projeto deve conter ao menos um componente a ser utilizado no formulário co
 + O botão Enviar somente estará ativo quando todos os campos estiverem válidos.
 + Ao clicar no botão enviar um JSON deverá ser enviado a seguinte url: *http://localhost/reserva*, a chamada deverá ser um **post** e em seu cabeçalho deverá haver um campo **Authorization** com o seguinte hash: *#ASDFGW#ERWQERTRYT#%$%$@#$%==*.
 
-> A chamada ao post irá gerar erro, não há problemas quanto a isso, o que será julgado será a chamada gerada e o código desenvolvido.
+> A chamada `post` irá gerar erro, não há problemas quanto a isso, o que será julgado será a chamada gerada e o código desenvolvido.
 
-### Testes:
+### Diferenciais:
 
-Testes são bem vindos, mas testes que não tenham relevância não serão considerados.
++ [Seguir a estrutura de aplicação recomendada pela equipe Angular](https://angular.io/guide/styleguide#application-structure-and-ngmodules)
++ [Lazy-loading de módulos de feature](https://angular.io/guide/lazy-loading-ngmodules)
++ Máscaras nos campos que permitem esse uso
++ Implementar responsividade
++ Animações
++ Testes unitários
++ README.md sugerir melhorias de usabilidade e acessibilidade caso as encontre
 
 ## Procedimento para a execução do projeto:
 
 1. Criar um repositório Git aberto.
-2. Executar commit's pequenos para que seja visível o fluxo do desenvolvimento.
-3. Criar um README.md com os procedimentos para a execução, teste e publicação do seu projeto.
-4. Ao finalizar, enviar um e-mail com o link do seu projeto.
+2. Criar um README.md com os procedimentos para a execução, teste e publicação do seu projeto.
+3. Ao finalizar, enviar um e-mail com o link do seu projeto.
