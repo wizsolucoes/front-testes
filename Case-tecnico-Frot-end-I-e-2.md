@@ -60,7 +60,7 @@ export const movieDbConfig = {
 };
 ```
 
-O clonar seu repositório vamos renomear o arquivo de `moviedb-config-sample.ts` para `moviedb-config.ts` para rodar a aplciação.
+Quando clonamos seu repositório vamos renomear o arquivo de `moviedb-config-sample.ts` para `moviedb-config.ts` para rodar a aplicação.
 
 ### API de consulta de CEP
 
